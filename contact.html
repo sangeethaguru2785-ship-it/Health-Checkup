@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#062b34" />
+    <meta name="description" content="Book a Stackly health checkup or contact our care team. Call, email or reserve your appointment online in under a minute." />
+    <title>Contact &mdash; Stackly Health Checkup Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg class="preloader__pulse" viewBox="0 0 120 40" role="img" aria-label="Loading">
+                <polyline points="0,20 22,20 30,6 40,34 50,20 120,20" />
+            </svg>
+            <img class="preloader__brand-logo" src="assets/img/logo.webp" alt="Stackly" width="1200" height="493" />
+            <div class="preloader__bar"><i></i></div>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-vital" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tests.html">Our Tests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="404.html" class="nav-phone d-none d-xl-flex">
+                        <i class="bi bi-telephone-inbound-fill"></i>
+                        <span><small>Emergency</small><strong>+1 800 555 1234</strong></span>
+                    </a>
+                    <a href="login.html" class="btn btn-login">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero page-hero--center page-hero--contact">
+        <div class="page-hero__bg">
+            <span class="page-hero__overlay" aria-hidden="true"></span>
+            <span class="page-hero__blob page-hero__blob--1"></span>
+            <span class="page-hero__blob page-hero__blob--2"></span>
+            <span class="page-hero__grid"></span>
+        </div>
+        <div class="container">
+            <div class="page-hero__inner">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="sep"><i class="bi bi-chevron-right"></i></li>
+                        <li class="current" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+                <span class="section-tag reveal-up"><i class="bi bi-chat-dots-fill"></i> Get in Touch</span>
+                <h1 class="page-hero__title">Book a visit or <em>just say hello</em></h1>
+                <p class="page-hero__text">Our care coordinators are one call away and always happy to help you choose the right checkup.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section">
+        <div class="container">
+            <div class="contact__grid">
+                <div>
+                    <span class="section-tag reveal-up"><i class="bi bi-geo-alt-fill"></i> Visit Us</span>
+                    <h2 class="section-title reveal-up">We&rsquo;d love to <em>hear from you</em></h2>
+                    <p class="section-sub reveal-up">Reach us by phone, email or drop by the center. Walk-ins are welcome but booking ahead keeps your wait at zero.</p>
+
+                    <div class="contact__cards mt-4">
+                        <div class="contact-card reveal-up">
+                            <span class="contact-card__icon"><i class="bi bi-telephone-fill"></i></span>
+                            <div>
+                                <strong>Call us</strong>
+                                <p><a href="tel:+18005551234">+1 800 555 1234</a></p>
+                                <p>Mon&ndash;Sat, 7:00 AM &ndash; 8:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-card reveal-up">
+                            <span class="contact-card__icon"><i class="bi bi-envelope-fill"></i></span>
+                            <div>
+                                <strong>Email us</strong>
+                                <p><a href="mailto:care@stackly.health">care@stackly.health</a></p>
+                                <p>We reply within one business day.</p>
+                            </div>
+                        </div>
+                        <div class="contact-card reveal-up">
+                            <span class="contact-card__icon"><i class="bi bi-geo-alt-fill"></i></span>
+                            <div>
+                                <strong>Visit the center</strong>
+                                <p>124 Wellness Avenue, Green Park,<br />Springfield 75001</p>
+                            </div>
+                        </div>
+                        <div class="contact-card reveal-up">
+                            <span class="contact-card__icon"><i class="bi bi-clock-fill"></i></span>
+                            <div>
+                                <strong>Opening hours</strong>
+                                <ul class="hours-list">
+                                    <li><span>Monday &ndash; Friday</span><span>7:00 AM &ndash; 8:00 PM</span></li>
+                                    <li><span>Saturday</span><span>8:00 AM &ndash; 6:00 PM</span></li>
+                                    <li><span>Sunday</span><span>9:00 AM &ndash; 2:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="appointment__form reveal-scale" id="appointmentForm" novalidate>
+                    <h3>Schedule Your Visit</h3>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="cName">Full Name</label>
+                            <input type="text" class="form-control" id="cName" name="name" placeholder="Jane Doe" data-validate="name" pattern="[A-Za-z ]+" title="Only letters and spaces are allowed." autocapitalize="words" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="cPhone">Phone Number</label>
+                            <input type="tel" class="form-control" id="cPhone" name="phone" placeholder="e.g. 15550001234" data-validate="phone" inputmode="numeric" pattern="[0-9]*" title="Only digits (0-9) are allowed." maxlength="15" required />
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="cEmail">Email Address</label>
+                            <input type="email" class="form-control" id="cEmail" name="email" placeholder="jane@example.com" required />
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="cPackage">Checkup Package</label>
+                            <select class="form-select" id="cPackage" name="package">
+                                <option>Essential Health</option>
+                                <option selected>Full Body Advanced</option>
+                                <option>Executive Premium</option>
+                                <option>Corporate Screening</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="cDate">Preferred Date</label>
+                            <input type="date" class="form-control" id="cDate" name="date" required />
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="cMessage">Message <span class="text-muted">(optional)</span></label>
+                            <textarea class="form-control" id="cMessage" name="message" rows="3" placeholder="Any conditions or requests we should know about?"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-brand btn-lg w-100">
+                                <i class="bi bi-send-check-fill"></i> Confirm Appointment
+                            </button>
+                            <p class="form-note" id="formNote" role="status"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MAP / LOCATION ===================== -->
+    <section class="section section--tint pt-0 location">
+        <div class="container">
+            <div class="location__grid">
+                <div class="map-embed location__map reveal-up">
+                    <iframe title="Stackly Health Checkup Center location" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.14%2C51.49%2C-0.10%2C51.52&amp;layer=mapnik" loading="lazy"></iframe>
+                    <span class="location__marker" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></span>
+                </div>
+
+                <div class="location__card reveal-up">
+                    <span class="location__icon"><i class="bi bi-geo-alt-fill"></i></span>
+                    <h3 class="location__title">Stackly Health Checkup Center</h3>
+                    <p class="location__address">124 Wellness Avenue, Green Park,<br />Springfield 75001</p>
+                    <div class="location__divider"></div>
+                    <h4 class="location__subtitle"><i class="bi bi-clock-fill"></i> Opening Hours</h4>
+                    <ul class="hours-list">
+                        <li><span>Monday &ndash; Friday</span><span>7:00 AM &ndash; 8:00 PM</span></li>
+                        <li><span>Saturday</span><span>8:00 AM &ndash; 6:00 PM</span></li>
+                        <li><span>Sunday</span><span>9:00 AM &ndash; 2:00 PM</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DEPARTMENTS ===================== -->
+    <section class="section" id="departments">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-diagram-3-fill"></i> Departments</span>
+                <h2 class="section-title reveal-up">Talk to the <em>right team</em></h2>
+                <p class="section-head__text reveal-up">Skip the switchboard &mdash; reach the department you need directly.</p>
+            </div>
+
+            <div class="values__grid">
+                <div class="contact-card reveal-up">
+                    <span class="contact-card__icon"><i class="bi bi-headset"></i></span>
+                    <div>
+                        <strong>Front Desk &amp; Appointments</strong>
+                        <p><a href="tel:+18005551234">+1 800 555 1234</a></p>
+                        <p><a href="mailto:care@stackly.health">care@stackly.health</a></p>
+                    </div>
+                </div>
+                <div class="contact-card reveal-up">
+                    <span class="contact-card__icon"><i class="bi bi-eyedropper"></i></span>
+                    <div>
+                        <strong>Laboratory &amp; Reports</strong>
+                        <p><a href="tel:+18005551299">+1 800 555 1299</a></p>
+                        <p><a href="mailto:lab@stackly.health">lab@stackly.health</a></p>
+                    </div>
+                </div>
+                <div class="contact-card reveal-up">
+                    <span class="contact-card__icon"><i class="bi bi-building"></i></span>
+                    <div>
+                        <strong>Corporate &amp; Insurance</strong>
+                        <p><a href="tel:+18005551388">+1 800 555 1388</a></p>
+                        <p><a href="mailto:corporate@stackly.health">corporate@stackly.health</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== GETTING HERE ===================== -->
+    <section class="section section--tint" id="getting-here">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-tag reveal-up"><i class="bi bi-signpost-split-fill"></i> Getting Here</span>
+                    <h2 class="section-title reveal-up">Easy to reach, <em>easy to park</em></h2>
+                    <p class="section-sub reveal-up">
+                        We are centrally located and fully accessible. Arrive a few minutes early
+                        for a relaxed check-in and a complimentary refreshment.
+                    </p>
+
+                    <div class="about__list">
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-p-square-fill"></i></span>
+                            <div><strong>Free On-Site Parking</strong><p>80 dedicated bays including EV charging points.</p></div>
+                        </div>
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-train-front-fill"></i></span>
+                            <div><strong>Public Transport</strong><p>5 minutes from Green Park metro and bus interchange.</p></div>
+                        </div>
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-universal-access-circle"></i></span>
+                            <div><strong>Step-Free Access</strong><p>Lifts, ramps and wheelchair-friendly consultation rooms.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="about__cta reveal-up">
+                        <a href="404.html" class="btn btn-brand" target="_blank" rel="noopener">Get Directions <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="404.html" class="link-arrow">Call reception <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about__media">
+                        <div class="about__img about__img--1 reveal-scale">
+                            <img src="assets/img/contact-reception.webp" alt="Stackly center reception" loading="lazy" />
+                        </div>
+                        <div class="about__img about__img--2 reveal-scale">
+                            <img src="assets/img/facility-reception.webp" alt="Center building exterior" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== VISIT PROCESS ===================== -->
+    <section class="section section--dark" id="visit-process">
+        <div class="container">
+            <div class="section-head section-head--center section-head--light">
+                <div class="section-head__text-wrap">
+                    <span class="section-tag section-tag--light reveal-up"><i class="bi bi-signpost-2-fill"></i> What Happens Next</span>
+                    <h2 class="section-title section-title--light reveal-up">From enquiry to <em>results, guided</em></h2>
+                    <p class="section-head__text reveal-up">Here is exactly what to expect after you reach out &mdash; quick, clear and stress-free.</p>
+                </div>
+            </div>
+            <div class="process__steps">
+                <div class="process__line"><i></i></div>
+                <article class="process__step reveal-up">
+                    <div class="process__num">01</div>
+                    <div class="process__icon"><i class="bi bi-send"></i></div>
+                    <h3>Send Your Enquiry</h3>
+                    <p>Call, email or fill the form. Tell us the checkup or service you are interested in.</p>
+                </article>
+                <article class="process__step reveal-up">
+                    <div class="process__num">02</div>
+                    <div class="process__icon"><i class="bi bi-telephone-inbound"></i></div>
+                    <h3>We Confirm</h3>
+                    <p>A care coordinator confirms your slot and shares any pre-visit instructions.</p>
+                </article>
+                <article class="process__step reveal-up">
+                    <div class="process__num">03</div>
+                    <div class="process__icon"><i class="bi bi-hospital"></i></div>
+                    <h3>Visit The Center</h3>
+                    <p>Check in at the front desk and complete your tests in a calm, zero-wait environment.</p>
+                </article>
+                <article class="process__step reveal-up">
+                    <div class="process__num">04</div>
+                    <div class="process__icon"><i class="bi bi-file-earmark-medical"></i></div>
+                    <h3>Get Your Reports</h3>
+                    <p>Receive secure digital reports and, if needed, a physician explanation of your results.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESPONSE STATS ===================== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <div class="section-head__text-wrap">
+                    <span class="section-tag reveal-up"><i class="bi bi-activity"></i> Responsive Support</span>
+                    <h2 class="section-title reveal-up">Support that keeps <em>its promises</em></h2>
+                    <p class="section-head__text reveal-up">Real numbers from our care team, measured every month.</p>
+                </div>
+            </div>
+            <div class="stat-strip">
+                <article class="stat-card reveal-up">
+                    <span class="stat-card__num">15 min</span>
+                    <span class="stat-card__label">Average response time</span>
+                </article>
+                <article class="stat-card reveal-up">
+                    <span class="stat-card__num">50k+</span>
+                    <span class="stat-card__label">Patients supported</span>
+                </article>
+                <article class="stat-card reveal-up">
+                    <span class="stat-card__num">24/7</span>
+                    <span class="stat-card__label">Emergency helpline</span>
+                </article>
+                <article class="stat-card reveal-up">
+                    <span class="stat-card__num">4.9/5</span>
+                    <span class="stat-card__label">Patient satisfaction</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHAT TO BRING ===================== -->
+    <section class="section section--tint" id="what-to-bring">
+        <div class="container">
+            <div class="feature-row feature-row--reverse">
+                <div class="feature-row__content">
+                    <span class="section-tag reveal-up"><i class="bi bi-list-check"></i> Before You Visit</span>
+                    <h2 class="section-title reveal-up">What to bring to your <em>appointment</em></h2>
+                    <p class="reveal-up">A little preparation goes a long way. Bring these items to help our team give you the most accurate results.</p>
+                    <ul class="feature-row__list reveal-up">
+                        <li><i class="bi bi-check-circle-fill"></i> Photo ID and your appointment confirmation</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Previous reports, scans or prescriptions (if any)</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Insurance card or corporate referral letter</li>
+                        <li><i class="bi bi-check-circle-fill"></i> A list of current medications and allergies</li>
+                    </ul>
+                </div>
+                <figure class="feature-row__media reveal-up">
+                    <img src="assets/img/doctor-reviewing-results.webp" alt="Doctor reviewing previous patient reports" loading="lazy" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section testimonials" id="contact-testimonials">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="section-tag reveal-up"><i class="bi bi-chat-quote-fill"></i> Patient Stories</span>
+                    <h2 class="section-title reveal-up">Kind words from <em>people we care for</em></h2>
+                </div>
+                <div class="testimonials__nav reveal-up">
+                    <button class="tnav-btn" id="tPrev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+                    <button class="tnav-btn" id="tNext" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+            <div class="testimonials__viewport">
+                <div class="testimonials__track" id="testiTrack">
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"Booking was effortless and the confirmation came within minutes. The team called ahead to explain everything I needed for my visit."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-priya.webp" alt="Priya Menon" loading="lazy" />
+                            <div><strong>Priya Menon</strong><span>Full Body Advanced</span></div>
+                        </div>
+                    </article>
+
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"I asked a question through the contact form late at night and still heard back first thing. Genuinely responsive, caring staff."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-ethan.webp" alt="Arjun Kapoor" loading="lazy" />
+                            <div><strong>Arjun Kapoor</strong><span>Corporate Wellness</span></div>
+                        </div>
+                    </article>
+
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"Easy to reach, plenty of parking and the reception team made the whole check-in feel calm and unhurried. Highly recommend."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-hana-yusuf.webp" alt="Hana Yusuf" loading="lazy" />
+                            <div><strong>Hana Yusuf</strong><span>Cardiac Assessment</span></div>
+                        </div>
+                    </article>
+
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"They arranged a home sample collection at short notice and the reports were in my inbox the same evening. Outstanding service."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-marcus.webp" alt="Leo Fernandes" loading="lazy" />
+                            <div><strong>Leo Fernandes</strong><span>Executive Premium</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACCREDITATIONS ===================== -->
+    <section class="section section--tint accreditations" id="contact-accreditations">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-patch-check-fill"></i> Trusted &amp; Accredited</span>
+                <h2 class="section-title reveal-up">Care backed by <em>trusted standards</em></h2>
+            </div>
+            <div class="logos reveal-up">
+                <span><i class="bi bi-shield-check"></i> NABL</span>
+                <span><i class="bi bi-award-fill"></i> ISO 9001</span>
+                <span><i class="bi bi-patch-check-fill"></i> CAP Certified</span>
+                <span><i class="bi bi-heart-pulse-fill"></i> AHA Partner</span>
+                <span><i class="bi bi-shield-lock-fill"></i> HIPAA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT FAQ ===================== -->
+    <section class="section" id="contact-faq">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-patch-question-fill"></i> Contact FAQ</span>
+                <h2 class="section-title reveal-up">Before you <em>reach out</em></h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion faq__accordion" id="contactAccordion">
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq1" aria-expanded="true">
+                                    How quickly will someone respond to my request?
+                                </button>
+                            </h3>
+                            <div id="cfaq1" class="accordion-collapse collapse show" data-bs-parent="#contactAccordion">
+                                <div class="accordion-body">Our care coordinators confirm appointment requests within 15 minutes during opening hours, and always within one business day for messages sent outside them.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq2">
+                                    Can I reschedule or cancel my booking?
+                                </button>
+                            </h3>
+                            <div id="cfaq2" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
+                                <div class="accordion-body">Absolutely. Call or email us with your reference number and we will move your slot at no extra cost, any time up to two hours before your appointment.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq3">
+                                    Do you offer home sample collection?
+                                </button>
+                            </h3>
+                            <div id="cfaq3" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
+                                <div class="accordion-body">Yes. Mention it in your message and a certified phlebotomist will visit at your preferred time. Home collection is available across the metro area at no additional charge.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq4">
+                                    Is there a dedicated emergency line?
+                                </button>
+                            </h3>
+                            <div id="cfaq4" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
+                                <div class="accordion-body">For urgent concerns, call our 24/7 emergency line and a senior clinician will assist you immediately. Non-urgent queries are best sent through the form above.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EMERGENCY CTA ===================== -->
+    <section class="section section--tint cta-banner">
+        <div class="container">
+            <div class="cta-banner__inner reveal-up">
+                <div class="cta-banner__content">
+                    <h2>Need urgent assistance? <em>We&rsquo;re here 24/7.</em></h2>
+                    <p>For emergencies call our dedicated line any time, day or night.</p>
+                </div>
+                <div class="cta-banner__actions">
+                    <a href="404.html" class="btn btn-white btn-lg"><i class="bi bi-telephone-fill"></i> Emergency Line</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="navbar-brand footer__logo" href="index.html">
+                        <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+                    </a>
+                    <p>Premium preventive health checkups and diagnostics, designed around you and your family's long-term wellbeing.</p>
+                    <div class="footer__socials">
+                        <a href="404.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="404.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="404.html">Full Body Screening</a></li>
+                        <li><a href="404.html">Cardiac Assessment</a></li>
+                        <li><a href="404.html">Radiology &amp; Imaging</a></li>
+                        <li><a href="404.html">Pathology Lab</a></li>
+                        <li><a href="404.html">Corporate Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+                        <li><a href="404.html">Our Doctors</a></li>
+                        <li><a href="404.html">Packages</a></li>
+                        <li><a href="404.html">Reviews</a></li>
+                        <li><a href="404.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__contact">
+                    <h4>Contact Details</h4>
+                    <ul class="footer__contact-list">
+                        <li><i class="bi bi-geo-alt-fill"></i><span>124 Wellness Avenue, Green Park, Springfield 75001</span></li>
+                        <li><i class="bi bi-telephone-fill"></i><a href="404.html">+1 800 555 1234</a></li>
+                        <li><i class="bi bi-envelope-fill"></i><a href="404.html">care@stackly.health</a></li>
+                        <li><i class="bi bi-clock-fill"></i><span>Mon&ndash;Fri 7:00 AM &ndash; 8:00 PM<br />Sat 8:00 AM &ndash; 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__newsletter">
+                    <h4>Health Newsletter</h4>
+                    <p>Get preventive care tips and exclusive screening offers.</p>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <p class="footer__form-note" id="newsNote" role="status"></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year"></span> Stackly Health Center. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                    <a href="404.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#062b34" />
+    <meta name="description" content="Stackly diagnostic services - pathology, cardiac assessment, radiology, vision, metabolic and preventive health screening programmes." />
+    <title>Our Services &mdash; Stackly Health Checkup Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg class="preloader__pulse" viewBox="0 0 120 40" role="img" aria-label="Loading">
+                <polyline points="0,20 22,20 30,6 40,34 50,20 120,20" />
+            </svg>
+            <img class="preloader__brand-logo" src="assets/img/logo.webp" alt="Stackly" width="1200" height="493" />
+            <div class="preloader__bar"><i></i></div>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-vital" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tests.html">Our Tests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="404.html" class="nav-phone d-none d-xl-flex">
+                        <i class="bi bi-telephone-inbound-fill"></i>
+                        <span><small>Emergency</small><strong>+1 800 555 1234</strong></span>
+                    </a>
+                    <a href="login.html" class="btn btn-login">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero page-hero--center page-hero--services">
+        <div class="page-hero__bg">
+            <span class="page-hero__overlay" aria-hidden="true"></span>
+            <span class="page-hero__blob page-hero__blob--1"></span>
+            <span class="page-hero__blob page-hero__blob--2"></span>
+            <span class="page-hero__grid"></span>
+        </div>
+        <div class="container">
+            <div class="page-hero__inner">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="sep"><i class="bi bi-chevron-right"></i></li>
+                        <li class="current" aria-current="page">Services</li>
+                    </ol>
+                </nav>
+                <span class="section-tag reveal-up"><i class="bi bi-grid-1x2-fill"></i> Our Services</span>
+                <h1 class="page-hero__title">Complete diagnostics under <em>one roof</em></h1>
+                <p class="page-hero__text">From routine blood work to advanced cardiac imaging, our integrated departments deliver fast, accurate and affordable results.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== SERVICES GRID ===================== -->
+    <section class="section">
+        <div class="container">
+            <div class="services__grid">
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-droplet-half"></i></span>
+                    <h3>Pathology &amp; Blood Work</h3>
+                    <p>200+ lab tests including CBC, lipid profile, liver, kidney and hormone panels with same-day digital reports.</p>
+                    <a href="404.html" class="service-card__link">View tests <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">01</span>
+                </article>
+                <article class="service-card service-card--feature reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-heart-pulse-fill"></i></span>
+                    <h3>Cardiac Assessment</h3>
+                    <p>ECG, echocardiography, stress testing and lipid profiling interpreted by dedicated heart specialists.</p>
+                    <a href="404.html" class="service-card__link">View packages <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">02</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-radioactive"></i></span>
+                    <h3>Radiology &amp; Imaging</h3>
+                    <p>Digital X-ray, ultrasound and MRI with low-dose technology and rapid radiology reporting.</p>
+                    <a href="404.html" class="service-card__link">Book a scan <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">03</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-eye-fill"></i></span>
+                    <h3>Eye &amp; Vision Screening</h3>
+                    <p>Comprehensive vision acuity, colour and retinal health evaluations for all ages.</p>
+                    <a href="404.html" class="service-card__link">Book screening <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">04</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-activity"></i></span>
+                    <h3>Diabetes &amp; Metabolic</h3>
+                    <p>HbA1c, thyroid, vitamin, hormone and metabolic profiling with dietitian guidance.</p>
+                    <a href="404.html" class="service-card__link">View tests <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">05</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-shield-plus"></i></span>
+                    <h3>Preventive &amp; Corporate</h3>
+                    <p>Annual wellness and corporate screening programmes with a digital results dashboard.</p>
+                    <a href="404.html" class="service-card__link">Request a plan <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">06</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHAT'S INCLUDED ===================== -->
+    <section class="section section--tint">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-tag reveal-up"><i class="bi bi-clipboard2-check-fill"></i> Every Visit Includes</span>
+                    <h2 class="section-title reveal-up">Thoughtful care, <em>not just tests</em></h2>
+                    <p class="section-sub reveal-up">
+                        Whatever package you choose, the experience is designed to be calm, quick and
+                        genuinely useful. Here is what comes standard with every appointment.
+                    </p>
+
+                    <div class="about__list">
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-person-check-fill"></i></span>
+                            <div><strong>Free Doctor Consultation</strong><p>A senior physician reviews your results with you.</p></div>
+                        </div>
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-phone-vibrate-fill"></i></span>
+                            <div><strong>Digital Reports</strong><p>Secure, shareable and available for life in your dashboard.</p></div>
+                        </div>
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-house-heart-fill"></i></span>
+                            <div><strong>Home Collection</strong><p>Certified phlebotomists across the metro area on request.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="about__cta reveal-up">
+                        <a href="404.html" class="btn btn-brand">Explore Packages <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="404.html" class="link-arrow">Browse test catalog <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about__media">
+                        <div class="about__img about__img--1 reveal-scale">
+                            <img src="assets/img/facility-lab.webp" alt="Diagnostic equipment" loading="lazy" />
+                        </div>
+                        <div class="about__img about__img--2 reveal-scale">
+                            <img src="assets/img/about-team.webp" alt="Care specialist team" loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DEPARTMENTS ===================== -->
+    <section class="section" id="departments">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-diagram-2-fill"></i> Inside Our Departments</span>
+                <h2 class="section-title reveal-up">A closer look at <em>how we work</em></h2>
+                <p class="section-head__text reveal-up">Each department is staffed by dedicated specialists and equipped with modern, calibrated technology.</p>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-row__content reveal-up">
+                    <span class="section-tag"><i class="bi bi-droplet-half"></i> Pathology Laboratory</span>
+                    <h3>Automated, dual-verified blood analysis</h3>
+                    <p>Over 200 assays run on fully automated analysers, with every abnormal result re-checked by a senior pathologist before release.</p>
+                    <ul class="feature-row__list">
+                        <li><i class="bi bi-check2-circle"></i> CBC, lipid, liver, kidney &amp; hormone panels</li>
+                        <li><i class="bi bi-check2-circle"></i> Barcoded samples tracked end to end</li>
+                        <li><i class="bi bi-check2-circle"></i> Same-day digital reports</li>
+                    </ul>
+                </div>
+                <div class="feature-row__media reveal-scale">
+                    <img src="assets/img/services-pathology.webp" alt="Automated pathology laboratory" loading="lazy" />
+                </div>
+            </div>
+
+            <div class="feature-row feature-row--reverse">
+                <div class="feature-row__content reveal-up">
+                    <span class="section-tag"><i class="bi bi-radioactive"></i> Radiology &amp; Imaging</span>
+                    <h3>Low-dose imaging with rapid reporting</h3>
+                    <p>Digital X-ray, ultrasound and MRI suites designed for comfort, with images reviewed by consultant radiologists.</p>
+                    <ul class="feature-row__list">
+                        <li><i class="bi bi-check2-circle"></i> Digital X-ray &amp; ultrasound</li>
+                        <li><i class="bi bi-check2-circle"></i> MRI &amp; abdominal imaging</li>
+                        <li><i class="bi bi-check2-circle"></i> Reports within 24&ndash;48 hours</li>
+                    </ul>
+                </div>
+                <div class="feature-row__media reveal-scale">
+                    <img src="assets/img/facility-imaging.webp" alt="Medical imaging suite" loading="lazy" />
+                </div>
+            </div>
+
+            <div class="feature-row">
+                <div class="feature-row__content reveal-up">
+                    <span class="section-tag"><i class="bi bi-heart-pulse-fill"></i> Cardiac &amp; Stress Lab</span>
+                    <h3>Heart screening interpreted by specialists</h3>
+                    <p>ECG, echocardiography and treadmill stress testing in a monitored, supervised environment.</p>
+                    <ul class="feature-row__list">
+                        <li><i class="bi bi-check2-circle"></i> Resting &amp; stress ECG</li>
+                        <li><i class="bi bi-check2-circle"></i> Echocardiography</li>
+                        <li><i class="bi bi-check2-circle"></i> Cardiologist review included</li>
+                    </ul>
+                </div>
+                <div class="feature-row__media reveal-scale">
+                    <img src="assets/img/services-cardiac.webp" alt="Cardiac assessment lab" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TURNAROUND ===================== -->
+    <section class="section section--tint" id="turnaround">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-stopwatch-fill"></i> Fast Turnaround</span>
+                <h2 class="section-title reveal-up">Results you can <em>plan around</em></h2>
+            </div>
+            <div class="stat-strip">
+                <div class="stat-card reveal-up">
+                    <span class="stat-card__num" data-count="24" data-suffix="h">0</span>
+                    <span class="stat-card__label">Most Reports Ready In</span>
+                </div>
+                <div class="stat-card reveal-up">
+                    <span class="stat-card__num" data-count="200" data-suffix="+">0</span>
+                    <span class="stat-card__label">Lab Tests Available</span>
+                </div>
+                <div class="stat-card reveal-up">
+                    <span class="stat-card__num" data-count="99" data-suffix="%">0</span>
+                    <span class="stat-card__label">Report Accuracy</span>
+                </div>
+                <div class="stat-card reveal-up">
+                    <span class="stat-card__num" data-count="60" data-suffix="min">0</span>
+                    <span class="stat-card__label">Average Visit Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="section section--dark process">
+        <div class="container">
+            <div class="section-head section-head--center section-head--light">
+                <span class="section-tag reveal-up"><i class="bi bi-diagram-3-fill"></i> How It Works</span>
+                <h2 class="section-title reveal-up">Four simple steps to <em>complete peace of mind</em></h2>
+            </div>
+
+            <div class="process__steps">
+                <div class="process__line"><i id="processLine"></i></div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">01</span>
+                    <span class="process__icon"><i class="bi bi-calendar2-check-fill"></i></span>
+                    <h3>Book Online</h3>
+                    <p>Pick a package and slot in under 60 seconds.</p>
+                </div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">02</span>
+                    <span class="process__icon"><i class="bi bi-clipboard2-pulse-fill"></i></span>
+                    <h3>Quick Sampling</h3>
+                    <p>Relaxed, comfortable and painless sample collection.</p>
+                </div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">03</span>
+                    <span class="process__icon"><i class="bi bi-cpu-fill"></i></span>
+                    <h3>Precision Analysis</h3>
+                    <p>Automated analysers with dual expert verification.</p>
+                </div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">04</span>
+                    <span class="process__icon"><i class="bi bi-file-earmark-medical-fill"></i></span>
+                    <h3>Digital Reports</h3>
+                    <p>Same-day results with doctor-guided next steps.</p>
+                </div>
+            </div>
+
+            <div class="process__cta reveal-up">
+                <a href="404.html" class="btn btn-brand btn-lg">Start My Checkup <i class="bi bi-arrow-right"></i></a>
+                <span class="process__note"><i class="bi bi-shield-lock-fill"></i> 100% confidential &amp; HIPAA compliant</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICE FAQ ===================== -->
+    <section class="section faq" id="service-faq">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="section-tag reveal-up"><i class="bi bi-patch-question-fill"></i> Service FAQ</span>
+                    <h2 class="section-title reveal-up">Questions about <em>our services</em></h2>
+                    <p class="section-sub reveal-up">
+                        Everything you need to know about booking, preparation and receiving your results.
+                    </p>
+                    <a href="404.html" class="btn btn-brand reveal-up">Talk to a Coordinator <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion faq__accordion" id="serviceFaqAccordion">
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcFaq1" aria-expanded="true">
+                                    Do I need a doctor's referral to book a service?
+                                </button>
+                            </h3>
+                            <div id="svcFaq1" class="accordion-collapse collapse show" data-bs-parent="#serviceFaqAccordion">
+                                <div class="accordion-body">No referral is required for most screenings. You can book directly online or by phone, and our coordinator will guide you to the right service based on your concerns.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svcFaq2">
+                                    How should I prepare for my visit?
+                                </button>
+                            </h3>
+                            <div id="svcFaq2" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                                <div class="accordion-body">Fasting of 8&ndash;12 hours is advised for blood and metabolic tests. Wear comfortable clothing for imaging, and bring a list of any medications you take.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svcFaq3">
+                                    Can I combine multiple services in one visit?
+                                </button>
+                            </h3>
+                            <div id="svcFaq3" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                                <div class="accordion-body">Yes. Most lab, cardiac, imaging and vision services can be scheduled together so you complete everything in a single, efficient appointment.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svcFaq4">
+                                    Is home sample collection part of your services?
+                                </button>
+                            </h3>
+                            <div id="svcFaq4" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                                <div class="accordion-body">Home collection is available across the metro area for lab-based services, performed by certified phlebotomists at no additional charge.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#svcFaq5">
+                                    Do you support corporate and family plans?
+                                </button>
+                            </h3>
+                            <div id="svcFaq5" class="accordion-collapse collapse" data-bs-parent="#serviceFaqAccordion">
+                                <div class="accordion-body">Absolutely. We run annual wellness programmes for teams of all sizes plus discounted family bundles to cover multiple members in one plan.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACCREDITATIONS ===================== -->
+    <section class="section section--tint accreditations" id="accreditations">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-patch-check-fill"></i> Trusted &amp; Accredited</span>
+                <h2 class="section-title reveal-up">Recognised for <em>quality you can trust</em></h2>
+            </div>
+            <div class="logos reveal-up">
+                <span><i class="bi bi-shield-check"></i> NABL</span>
+                <span><i class="bi bi-award-fill"></i> ISO 9001</span>
+                <span><i class="bi bi-patch-check-fill"></i> CAP Certified</span>
+                <span><i class="bi bi-heart-pulse-fill"></i> AHA Partner</span>
+                <span><i class="bi bi-shield-lock-fill"></i> HIPAA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="section cta-banner">
+        <div class="container">
+            <div class="cta-banner__inner reveal-up">
+                <div class="cta-banner__content">
+                    <h2>Not sure which service you need?</h2>
+                    <p>Tell us your concerns and our care coordinator will recommend the right tests.</p>
+                </div>
+                <div class="cta-banner__actions">
+                    <a href="404.html" class="btn btn-white btn-lg">Talk to Us <i class="bi bi-arrow-right"></i></a>
+                    <a href="404.html" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone-fill"></i> Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="navbar-brand footer__logo" href="index.html">
+                        <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+                    </a>
+                    <p>Premium preventive health checkups and diagnostics, designed around you and your family's long-term wellbeing.</p>
+                    <div class="footer__socials">
+                        <a href="404.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="404.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="404.html">Full Body Screening</a></li>
+                        <li><a href="404.html">Cardiac Assessment</a></li>
+                        <li><a href="404.html">Radiology &amp; Imaging</a></li>
+                        <li><a href="404.html">Pathology Lab</a></li>
+                        <li><a href="404.html">Corporate Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+                        <li><a href="404.html">Our Doctors</a></li>
+                        <li><a href="404.html">Packages</a></li>
+                        <li><a href="404.html">Reviews</a></li>
+                        <li><a href="404.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__contact">
+                    <h4>Contact Details</h4>
+                    <ul class="footer__contact-list">
+                        <li><i class="bi bi-geo-alt-fill"></i><span>124 Wellness Avenue, Green Park, Springfield 75001</span></li>
+                        <li><i class="bi bi-telephone-fill"></i><a href="404.html">+1 800 555 1234</a></li>
+                        <li><i class="bi bi-envelope-fill"></i><a href="404.html">care@stackly.health</a></li>
+                        <li><i class="bi bi-clock-fill"></i><span>Mon&ndash;Fri 7:00 AM &ndash; 8:00 PM<br />Sat 8:00 AM &ndash; 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__newsletter">
+                    <h4>Health Newsletter</h4>
+                    <p>Get preventive care tips and exclusive screening offers.</p>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <p class="footer__form-note" id="newsNote" role="status"></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year"></span> Stackly Health Center. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                    <a href="404.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

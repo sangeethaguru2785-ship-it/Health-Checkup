@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#062b34" />
+    <meta name="description" content="Stackly Health Checkup Center - Premium preventive health screenings, diagnostics and personalized care packages delivered by expert physicians." />
+    <title>Stackly &mdash; Premium Health Checkup Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg class="preloader__pulse" viewBox="0 0 120 40" role="img" aria-label="Loading">
+                <polyline points="0,20 22,20 30,6 40,34 50,20 120,20" />
+            </svg>
+            <img class="preloader__brand-logo" src="assets/img/logo.webp" alt="Stackly" width="1200" height="493" />
+            <div class="preloader__bar"><i></i></div>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-vital" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tests.html">Our Tests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="404.html" class="nav-phone d-none d-xl-flex">
+                        <i class="bi bi-telephone-inbound-fill"></i>
+                        <span><small>Emergency</small><strong>+1 800 555 1234</strong></span>
+                    </a>
+                    <a href="login.html" class="btn btn-login">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <header class="hero hero--home" id="home">
+        <div class="hero__bg">
+            <span class="hero__overlay" aria-hidden="true"></span>
+            <span class="hero__blob hero__blob--1"></span>
+            <span class="hero__blob hero__blob--2"></span>
+            <span class="hero__grid"></span>
+        </div>
+
+        <div class="container hero__container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 hero__copy">
+                    <span class="hero__eyebrow">
+                        <span class="pulse-dot"></span> Trusted Preventive Care Since 2004
+                    </span>
+                    <h1 class="hero__title">
+                        <span class="line"><span class="line__inner">Your Health,</span></span>
+                        <span class="line"><span class="line__inner">Precisely <em>Measured.</em></span></span>
+                    </h1>
+                    <p class="hero__subtitle">Preventive care, made simple and personal.</p>
+                    <p class="hero__text">
+                        Comprehensive full-body health checkups powered by advanced diagnostics,
+                        certified specialists and same-day digital reports &mdash; all in one calm,
+                        modern center.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="404.html" class="btn btn-brand btn-lg">
+                            <i class="bi bi-calendar2-heart-fill"></i> Book Your Checkup
+                        </a>
+                        <a href="404.html" class="btn btn-ghost btn-lg">
+                            <span class="play"><i class="bi bi-arrow-right"></i></span> Explore Packages
+                        </a>
+                    </div>
+
+                    <div class="hero__trust">
+                        <div class="hero__avatars">
+                            <img src="assets/img/doctor-sofia.webp" alt="Patient" loading="lazy" />
+                            <img src="assets/img/doctor-marcus.webp" alt="Patient" loading="lazy" />
+                            <img src="assets/img/doctor-sophia.webp" alt="Patient" loading="lazy" />
+                            <span class="hero__avatars-more">50k+</span>
+                        </div>
+                        <div class="hero__rating">
+                            <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <span>Rated <strong>4.9/5</strong> by 12,400+ patients</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero__media">
+                    <div class="hero__card hero__card--main" data-parallax="0.06">
+                        <img src="assets/img/hero-consultation.webp" alt="Doctor consulting a patient at Stackly Health Checkup Center" fetchpriority="high" width="1200" height="782" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#stats" class="hero__scroll" aria-label="Scroll down">
+            <span>Scroll</span>
+            <i class="bi bi-mouse"></i>
+        </a>
+    </header>
+
+    <!-- ===================== STATS ===================== -->
+    <section class="stats section--tint" id="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stats__item reveal-up">
+                    <span class="stats__num" data-count="20" data-suffix="+">0</span>
+                    <span class="stats__label">Years of Care</span>
+                </div>
+                <div class="stats__item reveal-up">
+                    <span class="stats__num" data-count="50" data-suffix="k+">0</span>
+                    <span class="stats__label">Checkups Done</span>
+                </div>
+                <div class="stats__item reveal-up">
+                    <span class="stats__num" data-count="120" data-suffix="+">0</span>
+                    <span class="stats__label">Expert Doctors</span>
+                </div>
+                <div class="stats__item reveal-up">
+                    <span class="stats__num" data-count="99" data-suffix="%">0</span>
+                    <span class="stats__label">Patient Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+            <span>Full Body Screening</span><i class="bi bi-plus-circle"></i>
+            <span>Cardiac Assessment</span><i class="bi bi-plus-circle"></i>
+            <span>Advanced Pathology</span><i class="bi bi-plus-circle"></i>
+            <span>Digital Imaging</span><i class="bi bi-plus-circle"></i>
+            <span>Preventive Care</span><i class="bi bi-plus-circle"></i>
+            <span>Full Body Screening</span><i class="bi bi-plus-circle"></i>
+            <span>Cardiac Assessment</span><i class="bi bi-plus-circle"></i>
+            <span>Advanced Pathology</span><i class="bi bi-plus-circle"></i>
+            <span>Digital Imaging</span><i class="bi bi-plus-circle"></i>
+            <span>Preventive Care</span><i class="bi bi-plus-circle"></i>
+        </div>
+    </div>
+
+    <!-- ===================== ABOUT TEASER ===================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="about__media">
+                        <div class="about__img about__img--1 reveal-scale">
+                            <img src="assets/img/about-lab.webp" alt="Modern health checkup lab" loading="lazy" />
+                        </div>
+                        <div class="about__img about__img--2 reveal-scale">
+                            <img src="assets/img/about-team.webp" alt="Care specialist team" loading="lazy" />
+                        </div>
+                        <div class="about__experience reveal-up">
+                            <span class="about__experience-num" data-count="20" data-suffix="+">0</span>
+                            <span>Years of<br />clinical excellence</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <span class="section-tag reveal-up"><i class="bi bi-heart-pulse"></i> About Stackly</span>
+                    <h2 class="section-title reveal-up">
+                        Preventive healthcare that <em>feels effortless</em> from the very first visit.
+                    </h2>
+                    <p class="section-sub reveal-up">
+                        We combine compassionate specialists with precision diagnostics to catch risks early
+                        and keep you thriving. Every checkup is designed around your body, your history and
+                        your goals &mdash; never a one-size-fits-all template.
+                    </p>
+
+                    <div class="about__list">
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-activity"></i></span>
+                            <div><strong>Precision Diagnostics</strong><p>Advanced analysers with 99.8% accuracy in reporting.</p></div>
+                        </div>
+                        <div class="about__list-item reveal-up">
+                            <span class="about__list-icon"><i class="bi bi-people-fill"></i></span>
+                            <div><strong>Expert Medical Panel</strong><p>120+ certified doctors across 18 specialties.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="about__cta reveal-up">
+                        <a href="404.html" class="btn btn-brand">Schedule a Visit <i class="bi bi-arrow-up-right"></i></a>
+                        <a href="404.html" class="link-arrow">More about us <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section section--tint services" id="services">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="section-tag reveal-up"><i class="bi bi-grid-1x2-fill"></i> Our Services</span>
+                    <h2 class="section-title reveal-up">Complete diagnostics under <em>one roof</em></h2>
+                </div>
+                <p class="section-head__text reveal-up">
+                    From routine blood work to advanced cardiac imaging, our integrated departments
+                    deliver fast, accurate and affordable results.
+                </p>
+            </div>
+
+            <div class="services__grid">
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-droplet-half"></i></span>
+                    <h3>Pathology &amp; Blood Work</h3>
+                    <p>200+ lab tests with digital reports delivered the same day.</p>
+                    <a href="404.html" class="service-card__link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">01</span>
+                </article>
+                <article class="service-card service-card--feature reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-heart-pulse-fill"></i></span>
+                    <h3>Cardiac Assessment</h3>
+                    <p>ECG, echo, stress tests and lipid profiling by heart specialists.</p>
+                    <a href="404.html" class="service-card__link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">02</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-radioactive"></i></span>
+                    <h3>Radiology &amp; Imaging</h3>
+                    <p>Digital X-ray, ultrasound and MRI with low-dose technology.</p>
+                    <a href="404.html" class="service-card__link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">03</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-eye-fill"></i></span>
+                    <h3>Eye &amp; Vision Screening</h3>
+                    <p>Comprehensive vision acuity and retinal health evaluations.</p>
+                    <a href="404.html" class="service-card__link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">04</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-activity"></i></span>
+                    <h3>Diabetes &amp; Metabolic</h3>
+                    <p>HbA1c, thyroid, vitamin and hormone profiling panels.</p>
+                    <a href="404.html" class="service-card__link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">05</span>
+                </article>
+                <article class="service-card reveal-up">
+                    <span class="service-card__icon"><i class="bi bi-shield-plus"></i></span>
+                    <h3>Preventive &amp; Corporate</h3>
+                    <p>Annual wellness and corporate health screening programmes.</p>
+                    <a href="404.html" class="service-card__link">Learn more <i class="bi bi-arrow-right"></i></a>
+                    <span class="service-card__num">06</span>
+                </article>
+            </div>
+
+            <div class="text-center mt-4 reveal-up">
+                <a href="404.html" class="btn btn-outline-brand">View all services <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="section values" id="why">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-stars"></i> Why Stackly</span>
+                <h2 class="section-title reveal-up">Reasons families <em>keep coming back</em></h2>
+                <p class="section-head__text reveal-up">
+                    A calm, modern experience engineered around accuracy, comfort and clarity.
+                </p>
+            </div>
+
+            <div class="values__grid">
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-bullseye"></i></span>
+                    <h3>Accuracy First</h3>
+                    <p>Dual-verified results and internationally accredited lab standards you can trust.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-lightning-charge-fill"></i></span>
+                    <h3>Same-Day Reports</h3>
+                    <p>Most lab results reach your secure dashboard the very same day.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-heart-pulse"></i></span>
+                    <h3>Human Warmth</h3>
+                    <p>Stress-free rooms, gentle staff and clear explanations at every step.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-people-fill"></i></span>
+                    <h3>120+ Specialists</h3>
+                    <p>Senior consultants across 18 specialties review every report.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-house-heart-fill"></i></span>
+                    <h3>Home Collection</h3>
+                    <p>Certified phlebotomists across the metro area at no extra charge.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-shield-lock-fill"></i></span>
+                    <h3>Private &amp; Secure</h3>
+                    <p>HIPAA-compliant records with lifetime digital access for you.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHY US / PROCESS ===================== -->
+    <section class="section section--dark process" id="process">
+        <div class="container">
+            <div class="section-head section-head--center section-head--light">
+                <span class="section-tag reveal-up"><i class="bi bi-diagram-3-fill"></i> How It Works</span>
+                <h2 class="section-title reveal-up">Four simple steps to <em>complete peace of mind</em></h2>
+            </div>
+
+            <div class="process__steps">
+                <div class="process__line"><i id="processLine"></i></div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">01</span>
+                    <span class="process__icon"><i class="bi bi-calendar2-check-fill"></i></span>
+                    <h3>Book Online</h3>
+                    <p>Pick a package and slot in under 60 seconds.</p>
+                </div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">02</span>
+                    <span class="process__icon"><i class="bi bi-clipboard2-pulse-fill"></i></span>
+                    <h3>Quick Sampling</h3>
+                    <p>Relaxed, comfortable and painless sample collection.</p>
+                </div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">03</span>
+                    <span class="process__icon"><i class="bi bi-cpu-fill"></i></span>
+                    <h3>Precision Analysis</h3>
+                    <p>Automated analysers with dual expert verification.</p>
+                </div>
+                <div class="process__step reveal-up">
+                    <span class="process__num">04</span>
+                    <span class="process__icon"><i class="bi bi-file-earmark-medical-fill"></i></span>
+                    <h3>Digital Reports</h3>
+                    <p>Same-day results with doctor-guided next steps.</p>
+                </div>
+            </div>
+
+            <div class="process__cta reveal-up">
+                <a href="404.html" class="btn btn-brand btn-lg">Start My Checkup <i class="bi bi-arrow-right"></i></a>
+                <span class="process__note"><i class="bi bi-shield-lock-fill"></i> 100% confidential &amp; HIPAA compliant</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DOCTORS ===================== -->
+    <section class="section doctors" id="doctors">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-person-badge-fill"></i> Our Specialists</span>
+                <h2 class="section-title reveal-up">Meet the experts <em>behind your results</em></h2>
+                <p class="section-head__text reveal-up">A panel of senior consultants dedicated to accurate diagnosis and warm, human care.</p>
+            </div>
+
+            <div class="doctors__grid">
+                <article class="doctor-card reveal-up">
+                    <div class="doctor-card__media">
+                        <img src="assets/img/doctor-amelia.webp" alt="Dr. Amelia Foster" loading="lazy" />
+                        <div class="doctor-card__socials">
+                            <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="404.html" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="404.html" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3>Dr. Amelia Foster</h3>
+                        <span>Chief Cardiologist</span>
+                        <p class="doctor-card__meta"><i class="bi bi-award-fill"></i> MD, DM &middot; 15 yrs experience</p>
+                    </div>
+                </article>
+
+                <article class="doctor-card reveal-up">
+                    <div class="doctor-card__media">
+                        <img src="assets/img/doctor-daniel.webp" alt="Dr. Daniel Reyes" loading="lazy" />
+                        <div class="doctor-card__socials">
+                            <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="404.html" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="404.html" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3>Dr. Daniel Reyes</h3>
+                        <span>Internal Medicine</span>
+                        <p class="doctor-card__meta"><i class="bi bi-award-fill"></i> MD, FACP &middot; 12 yrs experience</p>
+                    </div>
+                </article>
+
+                <article class="doctor-card reveal-up">
+                    <div class="doctor-card__media">
+                        <img src="assets/img/doctor-sophia.webp" alt="Dr. Sophia Bennett" loading="lazy" />
+                        <div class="doctor-card__socials">
+                            <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="404.html" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="404.html" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3>Dr. Sophia Bennett</h3>
+                        <span>Endocrinologist</span>
+                        <p class="doctor-card__meta"><i class="bi bi-award-fill"></i> MBBS, MD &middot; 10 yrs experience</p>
+                    </div>
+                </article>
+
+                <article class="doctor-card reveal-up">
+                    <div class="doctor-card__media">
+                        <img src="assets/img/doctor-marcus.webp" alt="Dr. Marcus Lee" loading="lazy" />
+                        <div class="doctor-card__socials">
+                            <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="404.html" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                            <a href="404.html" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3>Dr. Marcus Lee</h3>
+                        <span>Radiologist</span>
+                        <p class="doctor-card__meta"><i class="bi bi-award-fill"></i> MD, FRCR &middot; 14 yrs experience</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-4 reveal-up">
+                <a href="404.html" class="btn btn-outline-brand">Meet all specialists <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section section--tint testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="section-tag reveal-up"><i class="bi bi-chat-quote-fill"></i> Patient Stories</span>
+                    <h2 class="section-title reveal-up">Loved by families <em>across the city</em></h2>
+                </div>
+                <div class="testimonials__nav reveal-up">
+                    <button class="tnav-btn" id="tPrev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+                    <button class="tnav-btn" id="tNext" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="testimonials__viewport">
+                <div class="testimonials__track" id="testiTrack">
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"The full body package caught a thyroid issue two other clinics missed. Reports arrived the same evening and the doctor walked me through every number."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-amelia.webp" alt="Priya Menon" loading="lazy" />
+                            <div><strong>Priya Menon</strong><span>Full Body Advanced</span></div>
+                        </div>
+                    </article>
+
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"Booked a corporate screening for 40 employees. The team was organised, punctual and the digital dashboard made follow-ups incredibly simple."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-ethan.webp" alt="Arjun Kapoor" loading="lazy" />
+                            <div><strong>Arjun Kapoor</strong><span>Corporate Wellness</span></div>
+                        </div>
+                    </article>
+
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"As someone anxious about hospitals, the calm atmosphere here changed everything. Zero waiting, gentle staff and a heart report I actually understood."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-hana-yusuf.webp" alt="Hana Yusuf" loading="lazy" />
+                            <div><strong>Hana Yusuf</strong><span>Cardiac Assessment</span></div>
+                        </div>
+                    </article>
+
+                    <article class="testi-card">
+                        <div class="testi-card__stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                        <p class="testi-card__quote">"Executive package was worth every dollar. The lifestyle coach built a plan around my shift work and my energy levels have genuinely transformed."</p>
+                        <div class="testi-card__author">
+                            <img src="assets/img/avatar-marcus.webp" alt="Leo Fernandes" loading="lazy" />
+                            <div><strong>Leo Fernandes</strong><span>Executive Premium</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FACILITY GALLERY ===================== -->
+    <section class="section gallery" id="facility">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-images"></i> Our Facility</span>
+                <h2 class="section-title reveal-up">A center designed to <em>put you at ease</em></h2>
+                <p class="section-head__text reveal-up">
+                    Bright, calm and equipped with the latest diagnostic technology.
+                </p>
+            </div>
+
+            <div class="gallery__grid">
+                <figure class="gallery__item reveal-scale">
+                    <img src="assets/img/facility-reception.webp" alt="Welcoming reception area" loading="lazy" />
+                    <figcaption class="gallery__cap">Welcoming reception</figcaption>
+                </figure>
+                <figure class="gallery__item reveal-scale">
+                    <img src="assets/img/facility-lab.webp" alt="Accredited diagnostic laboratory" loading="lazy" />
+                    <figcaption class="gallery__cap">Accredited laboratory</figcaption>
+                </figure>
+                <figure class="gallery__item reveal-scale">
+                    <img src="assets/img/hero-consultation.webp" alt="Private consultation room" loading="lazy" />
+                    <figcaption class="gallery__cap">Private consultation room</figcaption>
+                </figure>
+                <figure class="gallery__item reveal-scale">
+                    <img src="assets/img/facility-imaging.webp" alt="Advanced imaging suite" loading="lazy" />
+                    <figcaption class="gallery__cap">Advanced imaging suite</figcaption>
+                </figure>
+                <figure class="gallery__item reveal-scale">
+                    <img src="assets/img/hospital.webp" alt="Comfortable waiting lounge" loading="lazy" />
+                    <figcaption class="gallery__cap">Comfortable waiting lounge</figcaption>
+                </figure>
+                <figure class="gallery__item reveal-scale">
+                    <img src="assets/img/facility-sample-station.webp" alt="Sample collection station" loading="lazy" />
+                    <figcaption class="gallery__cap">Gentle sample collection</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== HEALTH TIPS ===================== -->
+    <section class="section section--tint tips" id="insights">
+        <div class="container">
+            <div class="section-head">
+                <div>
+                    <span class="section-tag reveal-up"><i class="bi bi-journal-text"></i> Health Tips</span>
+                    <h2 class="section-title reveal-up">Insights from <em>our specialists</em></h2>
+                </div>
+                <a href="404.html" class="link-arrow reveal-up">View all articles <i class="bi bi-arrow-right"></i></a>
+            </div>
+
+            <div class="posts__grid">
+                <article class="post-card reveal-up">
+                    <div class="post-card__media">
+                        <img src="assets/img/health-monitoring.webp" alt="Heart health monitoring" loading="lazy" />
+                    </div>
+                    <div class="post-card__body">
+                        <span class="post-card__badge">Heart Health</span>
+                        <h3><a href="about.html">5 numbers your annual heart check should cover</a></h3>
+                        <p>Understand the key markers that reveal cardiovascular risk early.</p>
+                        <div class="post-card__meta"><i class="bi bi-clock"></i> 4 min read</div>
+                    </div>
+                </article>
+
+                <article class="post-card reveal-up">
+                    <div class="post-card__media">
+                        <img src="assets/img/healthy-lifestyle.webp" alt="Healthy balanced meal" loading="lazy" />
+                    </div>
+                    <div class="post-card__body">
+                        <span class="post-card__badge">Nutrition</span>
+                        <h3><a href="about.html">Eating for energy: a simple plate guide</a></h3>
+                        <p>Small, sustainable changes that keep blood sugar and energy steady.</p>
+                        <div class="post-card__meta"><i class="bi bi-clock"></i> 6 min read</div>
+                    </div>
+                </article>
+
+                <article class="post-card reveal-up">
+                    <div class="post-card__media">
+                        <img src="assets/img/doctor-reviewing-results.webp" alt="Doctor reviewing lab results" loading="lazy" />
+                    </div>
+                    <div class="post-card__body">
+                        <span class="post-card__badge">Prevention</span>
+                        <h3><a href="about.html">How often should you get a full body checkup?</a></h3>
+                        <p>A quick guide to screening frequency by age and risk profile.</p>
+                        <div class="post-card__meta"><i class="bi bi-clock"></i> 5 min read</div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="section-tag reveal-up"><i class="bi bi-patch-question-fill"></i> FAQ</span>
+                    <h2 class="section-title reveal-up">Questions, <em>answered clearly</em></h2>
+                    <p class="section-sub reveal-up">
+                        Still unsure about something? Our care team is one call away and always happy to help.
+                    </p>
+                    <a href="404.html" class="btn btn-brand reveal-up">Talk to a Coordinator <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion faq__accordion" id="faqAccordion">
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+                                    Do I need to fast before my checkup?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">For most blood and metabolic tests, an 8&ndash;12 hour fast is recommended. Our coordinator will send exact instructions based on your chosen package when you book.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How soon will I receive my reports?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">The majority of reports are ready the same day. Imaging and specialised panels may take up to 24&ndash;48 hours. Everything is delivered securely to your dashboard and email.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Is home sample collection available?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes. Home collection is available across the metro area for most lab-based packages, performed by certified phlebotomists at no additional charge.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do you offer corporate or family plans?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Absolutely. We run annual wellness programmes for teams of all sizes plus discounted family bundles. Reach out and we will tailor a plan to your group.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Are the packages covered by insurance?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Many preventive screenings are covered by major insurers. We provide itemised invoices and can assist with direct claim paperwork for supported providers.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== ACCREDITATIONS ===================== -->
+    <section class="section section--tint accreditations" id="accreditations">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-patch-check-fill"></i> Trusted &amp; Accredited</span>
+                <h2 class="section-title reveal-up">Recognised for <em>quality you can trust</em></h2>
+            </div>
+            <div class="logos reveal-up">
+                <span><i class="bi bi-shield-check"></i> NABL</span>
+                <span><i class="bi bi-award-fill"></i> ISO 9001</span>
+                <span><i class="bi bi-patch-check-fill"></i> CAP Certified</span>
+                <span><i class="bi bi-heart-pulse-fill"></i> AHA Partner</span>
+                <span><i class="bi bi-shield-lock-fill"></i> HIPAA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-banner__inner reveal-up">
+                <div class="cta-banner__content">
+                    <h2>Your best health starts with <em>one decision.</em></h2>
+                    <p>Book a premium full-body checkup today and get 20% off your first screening.</p>
+                </div>
+                <div class="cta-banner__actions">
+                    <a href="404.html" class="btn btn-white btn-lg">Book Now <i class="bi bi-arrow-right"></i></a>
+                    <a href="404.html" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone-fill"></i> Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="navbar-brand footer__logo" href="index.html">
+                        <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+                    </a>
+                    <p>Premium preventive health checkups and diagnostics, designed around you and your family's long-term wellbeing.</p>
+                    <div class="footer__socials">
+                        <a href="404.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="404.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="404.html">Full Body Screening</a></li>
+                        <li><a href="404.html">Cardiac Assessment</a></li>
+                        <li><a href="404.html">Radiology &amp; Imaging</a></li>
+                        <li><a href="404.html">Pathology Lab</a></li>
+                        <li><a href="404.html">Corporate Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+                        <li><a href="404.html">Our Doctors</a></li>
+                        <li><a href="404.html">Packages</a></li>
+                        <li><a href="404.html">Reviews</a></li>
+                        <li><a href="404.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__contact">
+                    <h4>Contact Details</h4>
+                    <ul class="footer__contact-list">
+                        <li><i class="bi bi-geo-alt-fill"></i><span>124 Wellness Avenue, Green Park, Springfield 75001</span></li>
+                        <li><i class="bi bi-telephone-fill"></i><a href="404.html">+1 800 555 1234</a></li>
+                        <li><i class="bi bi-envelope-fill"></i><a href="404.html">care@stackly.health</a></li>
+                        <li><i class="bi bi-clock-fill"></i><span>Mon&ndash;Fri 7:00 AM &ndash; 8:00 PM<br />Sat 8:00 AM &ndash; 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__newsletter">
+                    <h4>Health Newsletter</h4>
+                    <p>Get preventive care tips and exclusive screening offers.</p>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <p class="footer__form-note" id="newsNote" role="status"></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year"></span> Stackly Health Center. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                    <a href="404.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#062b34" />
+    <meta name="description" content="Stackly health checkup packages - Essential, Full Body Advanced and Executive Premium screenings with transparent pricing." />
+    <title>Health Packages &mdash; Stackly Health Checkup Center</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+    <!-- ===================== PRELOADER ===================== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <svg class="preloader__pulse" viewBox="0 0 120 40" role="img" aria-label="Loading">
+                <polyline points="0,20 22,20 30,6 40,34 50,20 120,20" />
+            </svg>
+            <img class="preloader__brand-logo" src="assets/img/logo.webp" alt="Stackly" width="1200" height="493" />
+            <div class="preloader__bar"><i></i></div>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg navbar-vital" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+                <span class="toggler-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tests.html">Our Tests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="404.html" class="nav-phone d-none d-xl-flex">
+                        <i class="bi bi-telephone-inbound-fill"></i>
+                        <span><small>Emergency</small><strong>+1 800 555 1234</strong></span>
+                    </a>
+                    <a href="login.html" class="btn btn-login">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== PAGE HERO ===================== -->
+    <header class="page-hero page-hero--center page-hero--packages">
+        <div class="page-hero__bg">
+            <span class="page-hero__overlay" aria-hidden="true"></span>
+            <span class="page-hero__blob page-hero__blob--1"></span>
+            <span class="page-hero__blob page-hero__blob--2"></span>
+            <span class="page-hero__grid"></span>
+        </div>
+        <div class="container">
+            <div class="page-hero__inner">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="sep"><i class="bi bi-chevron-right"></i></li>
+                        <li class="current" aria-current="page">Packages</li>
+                    </ol>
+                </nav>
+                <span class="section-tag reveal-up"><i class="bi bi-box2-heart-fill"></i> Health Packages</span>
+                <h1 class="page-hero__title">Choose a checkup that <em>fits your life</em></h1>
+                <p class="page-hero__text">Transparent pricing, no hidden costs. Every package includes a free doctor consultation and lifetime access to your digital reports.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== PACKAGES ===================== -->
+    <section class="section">
+        <div class="container">
+            <div class="packages__toggle reveal-up">
+                <div class="packages__switch" id="priceSwitch" role="tablist" aria-label="Pricing toggle">
+                    <button class="packages__switch-btn active" data-plan="standard" role="tab" aria-selected="true">Standard</button>
+                    <button class="packages__switch-btn" data-plan="premium" role="tab" aria-selected="false">Premium <span class="save">Save 20%</span></button>
+                </div>
+            </div>
+
+            <div class="packages__grid">
+                <article class="package-card reveal-up">
+                    <div class="package-card__head">
+                        <span class="package-card__badge">Starter</span>
+                        <h3>Essential Health</h3>
+                        <p>Perfect for a quick annual baseline check.</p>
+                    </div>
+                    <div class="package-card__price">
+                        <span class="cur">$</span><span class="amount" data-standard="49" data-premium="39">49</span>
+                        <span class="per">/ checkup</span>
+                    </div>
+                    <ul class="package-card__list">
+                        <li><i class="bi bi-check2-circle"></i> 40+ essential lab tests</li>
+                        <li><i class="bi bi-check2-circle"></i> Doctor consultation</li>
+                        <li><i class="bi bi-check2-circle"></i> ECG &amp; vitals screening</li>
+                        <li><i class="bi bi-check2-circle"></i> Digital report in 24 hrs</li>
+                        <li class="is-muted"><i class="bi bi-dash-circle"></i> Full-body imaging</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-outline-brand w-100">Choose Essential</a>
+                </article>
+
+                <article class="package-card package-card--popular reveal-up">
+                    <span class="package-card__ribbon">Most Popular</span>
+                    <div class="package-card__head">
+                        <span class="package-card__badge">Complete</span>
+                        <h3>Full Body Advanced</h3>
+                        <p>Our most-loved comprehensive screening.</p>
+                    </div>
+                    <div class="package-card__price">
+                        <span class="cur">$</span><span class="amount" data-standard="129" data-premium="99">129</span>
+                        <span class="per">/ checkup</span>
+                    </div>
+                    <ul class="package-card__list">
+                        <li><i class="bi bi-check2-circle"></i> 90+ advanced lab tests</li>
+                        <li><i class="bi bi-check2-circle"></i> Cardiac + chest assessment</li>
+                        <li><i class="bi bi-check2-circle"></i> Abdominal ultrasound</li>
+                        <li><i class="bi bi-check2-circle"></i> Eye &amp; dental screening</li>
+                        <li><i class="bi bi-check2-circle"></i> Doctor review included</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-brand w-100">Choose Full Body</a>
+                </article>
+
+                <article class="package-card reveal-up">
+                    <div class="package-card__head">
+                        <span class="package-card__badge">Elite</span>
+                        <h3>Executive Premium</h3>
+                        <p>Ultimate deep-dive wellness for busy professionals.</p>
+                    </div>
+                    <div class="package-card__price">
+                        <span class="cur">$</span><span class="amount" data-standard="249" data-premium="199">249</span>
+                        <span class="per">/ checkup</span>
+                    </div>
+                    <ul class="package-card__list">
+                        <li><i class="bi bi-check2-circle"></i> 150+ premium lab panels</li>
+                        <li><i class="bi bi-check2-circle"></i> MRI &amp; advanced imaging</li>
+                        <li><i class="bi bi-check2-circle"></i> Cardiac stress &amp; echo</li>
+                        <li><i class="bi bi-check2-circle"></i> Diet &amp; lifestyle coach</li>
+                        <li><i class="bi bi-check2-circle"></i> Priority concierge support</li>
+                    </ul>
+                    <a href="404.html" class="btn btn-outline-brand w-100">Choose Executive</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHAT'S INCLUDED ===================== -->
+    <section class="section section--tint" id="whats-included">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-clipboard2-check-fill"></i> What We Include</span>
+                <h2 class="section-title reveal-up">The same care in <em>every package</em></h2>
+                <p class="section-head__text reveal-up">No matter which checkup you choose, you receive the following as standard.</p>
+            </div>
+
+            <div class="values__grid">
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-person-check-fill"></i></span>
+                    <h3>Doctor Consultation</h3>
+                    <p>A senior physician explains your results and answers all your questions.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-phone-vibrate-fill"></i></span>
+                    <h3>Lifetime Digital Reports</h3>
+                    <p>Secure, shareable reports available to you for life in your dashboard.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-house-heart-fill"></i></span>
+                    <h3>Home Sample Collection</h3>
+                    <p>Certified phlebotomists across the metro area at no extra charge.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-shield-lock-fill"></i></span>
+                    <h3>Private &amp; Secure</h3>
+                    <p>HIPAA-compliant records with the highest standards of confidentiality.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-calendar2-event-fill"></i></span>
+                    <h3>Follow-up Guidance</h3>
+                    <p>Clear next steps and a referral path if further care is needed.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-headset"></i></span>
+                    <h3>Dedicated Support</h3>
+                    <p>Our care coordinators help with booking, billing and claim assistance.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== COMPARISON ===================== -->
+    <section class="section">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-list-check"></i> Compare</span>
+                <h2 class="section-title reveal-up">Every package, <em>side by side</em></h2>
+            </div>
+
+            <div class="compare reveal-up">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Features</th>
+                            <th scope="col">Essential</th>
+                            <th scope="col">Full Body Advanced</th>
+                            <th scope="col">Executive Premium</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Number of lab tests</th>
+                            <td>40+</td>
+                            <td>90+</td>
+                            <td>150+</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Doctor consultation</th>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">ECG &amp; vitals</th>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ultrasound / imaging</th>
+                            <td><i class="bi bi-dash-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cardiac stress &amp; echo</th>
+                            <td><i class="bi bi-dash-circle"></i></td>
+                            <td><i class="bi bi-dash-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Diet &amp; lifestyle coach</th>
+                            <td><i class="bi bi-dash-circle"></i></td>
+                            <td><i class="bi bi-dash-circle"></i></td>
+                            <td><i class="bi bi-check2-circle"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Report delivery</th>
+                            <td>24 hrs</td>
+                            <td>Same day</td>
+                            <td>Priority, same day</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="text-center mt-4 reveal-up">
+                <a href="404.html" class="btn btn-brand btn-lg">Book Your Package <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="section section--tint faq">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <span class="section-tag reveal-up"><i class="bi bi-patch-question-fill"></i> FAQ</span>
+                    <h2 class="section-title reveal-up">Questions, <em>answered clearly</em></h2>
+                    <p class="section-sub reveal-up">
+                        Still unsure about something? Our care team is one call away and always happy to help.
+                    </p>
+                    <a href="404.html" class="btn btn-brand reveal-up">Talk to a Coordinator <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion faq__accordion" id="faqAccordion">
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq1" aria-expanded="true">
+                                    Can I upgrade my package later?
+                                </button>
+                            </h3>
+                            <div id="pfaq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Yes. You can add individual tests or upgrade to a larger package at any time before your appointment, and we will simply adjust the price.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq2">
+                                    How does the premium discount work?
+                                </button>
+                            </h3>
+                            <div id="pfaq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Choosing the premium billing plan applies a 20% saving to every package and is ideal if you book recurring annual checkups.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq3">
+                                    Are family bundles available?
+                                </button>
+                            </h3>
+                            <div id="pfaq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Absolutely. Book two or more checkups for the same household and receive additional family pricing. Contact us for a tailored quote.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item reveal-up">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pfaq4">
+                                    Are the packages covered by insurance?
+                                </button>
+                            </h3>
+                            <div id="pfaq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Many preventive screenings are covered by major insurers. We provide itemised invoices and can assist with direct claim paperwork for supported providers.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CTA BANNER ===================== -->
+    <section class="section cta-banner">
+        <div class="container">
+            <div class="cta-banner__inner reveal-up">
+                <div class="cta-banner__content">
+                    <h2>Ready to book your <em>checkup?</em></h2>
+                    <p>Pick the package that fits you best and schedule your visit in under a minute.</p>
+                </div>
+                <div class="cta-banner__actions">
+                    <a href="404.html" class="btn btn-white btn-lg">Book Now <i class="bi bi-arrow-right"></i></a>
+                    <a href="404.html" class="btn btn-outline-light btn-lg"><i class="bi bi-telephone-fill"></i> Call Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PAYMENT & INSURANCE ===================== -->
+    <section class="section section--tint" id="payment">
+        <div class="container">
+            <div class="section-head section-head--center">
+                <span class="section-tag reveal-up"><i class="bi bi-credit-card-fill"></i> Payment &amp; Insurance</span>
+                <h2 class="section-title reveal-up">Flexible options to <em>fit your needs</em></h2>
+                <p class="section-head__text reveal-up">We make it easy to pay through multiple methods and help with insurance claims.</p>
+            </div>
+
+            <div class="values__grid">
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-shield-check"></i></span>
+                    <h3>Insurance Accepted</h3>
+                    <p>We work with major providers and issue itemised invoices for direct claims.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-credit-card-2-front-fill"></i></span>
+                    <h3>Easy Payment Methods</h3>
+                    <p>Pay by card, digital wallets or EMI options at the time of booking.</p>
+                </article>
+                <article class="value-card reveal-up">
+                    <span class="value-card__icon"><i class="bi bi-people-fill"></i></span>
+                    <h3>Family &amp; Corporate Plans</h3>
+                    <p>Volume discounts available for families and organisations of all sizes.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a class="navbar-brand footer__logo" href="index.html">
+                        <img class="brand-logo" src="assets/img/logo.webp" alt="Stackly Health Checkup Center" width="1200" height="493" />
+                    </a>
+                    <p>Premium preventive health checkups and diagnostics, designed around you and your family's long-term wellbeing.</p>
+                    <div class="footer__socials">
+                        <a href="404.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="404.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="404.html">Full Body Screening</a></li>
+                        <li><a href="404.html">Cardiac Assessment</a></li>
+                        <li><a href="404.html">Radiology &amp; Imaging</a></li>
+                        <li><a href="404.html">Pathology Lab</a></li>
+                        <li><a href="404.html">Corporate Wellness</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+                        <li><a href="404.html">Our Doctors</a></li>
+                        <li><a href="404.html">Packages</a></li>
+                        <li><a href="404.html">Reviews</a></li>
+                        <li><a href="404.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__contact">
+                    <h4>Contact Details</h4>
+                    <ul class="footer__contact-list">
+                        <li><i class="bi bi-geo-alt-fill"></i><span>124 Wellness Avenue, Green Park, Springfield 75001</span></li>
+                        <li><i class="bi bi-telephone-fill"></i><a href="404.html">+1 800 555 1234</a></li>
+                        <li><i class="bi bi-envelope-fill"></i><a href="404.html">care@stackly.health</a></li>
+                        <li><i class="bi bi-clock-fill"></i><span>Mon&ndash;Fri 7:00 AM &ndash; 8:00 PM<br />Sat 8:00 AM &ndash; 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col footer__newsletter">
+                    <h4>Health Newsletter</h4>
+                    <p>Get preventive care tips and exclusive screening offers.</p>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                    <p class="footer__form-note" id="newsNote" role="status"></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; <span id="year"></span> Stackly Health Center. All rights reserved.</p>
+                <div class="footer__bottom-links">
+                    <a href="404.html">Privacy Policy</a>
+                    <a href="404.html">Terms &amp; Conditions</a>
+                    <a href="404.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== BACK TO TOP ===================== -->
+    <button class="back-top" id="backTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- ===================== SCRIPTS ===================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
